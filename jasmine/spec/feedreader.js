@@ -34,7 +34,6 @@ $(function() {
         it('URL defined', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
-
                 expect(feed['url']).toMatch(/^http/);                
             });
         });
@@ -44,6 +43,12 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+        it('name defined', function() {
+            allFeeds.forEach(function(feed) {
+                expect(feed.name).toBeDefined();
+                expect(feed.name).toMatch(/\S/);               
+            });
+        });
         
     });
 
