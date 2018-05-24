@@ -60,7 +60,6 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-
         var body = document.body;
         var hidden = body.classList.contains('menu-hidden');
 
