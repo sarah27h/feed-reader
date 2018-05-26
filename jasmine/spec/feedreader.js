@@ -103,7 +103,21 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test will require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
-        
+        var feed = document.querySelector('.feed'),
+            testFeedEntryExist;
+        beforeEach(function(done) {
+            loadFeed(0, function(){
+                done();
+            });
+        });
+
+        it('a single .entry element within the .feed container', function(done) {
+            testFeedEntryExist = feed.hasChildNodes();
+            console.log(testFeedEntryExist, feed);
+            expect(testFeedEntryExist).toBe(true);
+            done();
+        });
+
     });
     /* TODO: Write a new test suite named "New Feed Selection" */
 
