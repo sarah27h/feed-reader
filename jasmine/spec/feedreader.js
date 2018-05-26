@@ -125,6 +125,24 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        var firstFeed,
+            firstFeedNew;
+        beforeEach(function(done) {
+            firstFeed = document.querySelector('.entry').childNodes[1].innerText;
+            loadFeed(2, function(){
+                done();
+            });
+        });
+
+        it('new feed is loaded -> the content actually changes', function(done) {
+            var menuIcon = $('.menu-icon-link');
+            // $('.feedList .a').click();
+            firstFeedNew = document.querySelector('.entry').childNodes[1].innerText;
+            
+            console.log(firstFeed, firstFeedNew);
+            expect(firstFeed).not.toEqual(firstFeedNew);
+            done();
+        });
 
     });
 }());
