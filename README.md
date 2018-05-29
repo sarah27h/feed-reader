@@ -15,7 +15,7 @@ https://sarah27h.github.io/feed-reader/
 
 ## Project Overview
 
-In this project is a web-based application that reads RSS feeds. Used Jasmine 2.2 [Jasmine](http://jasmine.github.io/) to test code against a pre-existing application.  
+In this project is a web-based application that reads RSS feeds. Used [Jasmine](http://jasmine.github.io/) 2.2 to test code against a pre-existing application.  
 
 ## Instructions
 
