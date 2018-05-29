@@ -19,9 +19,9 @@ In this project is a web-based application that reads RSS feeds. Used [Jasmine](
 
 ## Instructions
 
-    - To run test open index.html file in your browser.
-    - To view and edit tests open jasmine folder -> spec folder -> feedreader.js file.
-    - To vie and edit js code of project open -> js folder -> app.js file.
+    - To run the tests open index.html file in your browser.
+    - To view and edit the tests open jasmine folder -> spec folder -> feedreader.js file.
+    - To view and edit js code of project open -> js folder -> app.js file.
 
 ## Code sources
 
