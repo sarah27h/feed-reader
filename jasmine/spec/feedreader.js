@@ -53,7 +53,7 @@ $(function() {
 
     /* New test suite named "The menu" */
     describe('The menu', function() {
-        var body = document.body,
+        const body = document.body,
             hidden = body.classList.contains('menu-hidden'),
             menuIcon = $('.menu-icon-link');
 
@@ -85,8 +85,8 @@ $(function() {
 
     /* New test suite named "Initial Entries" */
     describe('Initial Entries', function() {
-        var feed = document.querySelector('.feed'),
-            testFeedEntryExist;
+        const feed = document.querySelector('.feed');
+        let testFeedEntryExist;
         /* This test ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
@@ -115,9 +115,9 @@ $(function() {
 
     /* New test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
-        var firstFeed,
-            firstFeedNew,
-            menuIcon = $('.menu-icon-link');
+        let firstFeed,
+            firstFeedNew;
+        const menuIcon = $('.menu-icon-link');
         /* This test ensures when a new feed is loaded
          * by the loadFeed function the content actually changes.
          * Remember, loadFeed() is asynchronous.
